@@ -26,6 +26,7 @@ header >a{
     border: 1px solid #333;
     border-radius: 5px;
     padding: 0 10px;
+    margin-right: 10px;
 }
 #search-button{
     width: 100px;
