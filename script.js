@@ -120,7 +120,9 @@ const fetchWishListMovie = async ()=>{
 const allTab = document.querySelector("#all-items");
 const favoriteTab = document.querySelector("#favorite-items");
 function dispayMovies(){
+   
     if (allTab.classList.contains("active-tab")){
+        location.reload()
         renderMovies(movies); //render all movies
     }
     else if(favoriteTab.classList.contains("active-tab")){
@@ -129,6 +131,7 @@ function dispayMovies(){
     }
 }
 function switchTabs(event){
+   
     allTab.classList.remove("active-tab");
     favoriteTab.classList.remove("active-tab");
 
