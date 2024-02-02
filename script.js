@@ -277,7 +277,7 @@ function throttle(func,delay){
 }
 searchInput.addEventListener('input',()=>{ 
    pagination.style.display = "none"
-   throttle(onSearchChange(event),500);
+   throttle(onSearchChange(event),1000);
 });
 
 
